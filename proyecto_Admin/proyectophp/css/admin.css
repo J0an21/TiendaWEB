@@ -1,0 +1,195 @@
+body {
+    background-color: #FAF5E9;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyform {
+    background-color: rgb(201, 195, 195);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+} 
+
+nav {
+    background-color: #DDD0C8;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    color:black;
+    width: 100%;
+    position: fixed; /* Hace que el nav se mantenga arriba */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+h1{
+    color:white;
+}
+
+h2{
+    color:black;
+    margin-left: 10px;
+}
+  
+
+nav a:hover,
+nav a.active,
+nav a[href="admin_usu.php"].active,
+nav a[href="admin_prod.php"].active,
+nav a[href="admin_ped.php"].active {
+    background-color: #323232;
+    color: white;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th {
+    background-color: #323232;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #323232;
+}
+
+td {
+    background-color: #DDD0C8;
+    padding: 12px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #323232;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #4d9dee;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #004599;
+    transform: scale(1.05);
+}
+
+.btn-space {
+    margin-right: 10px;
+}
+
+/* Contenedor del formulario */
+.login-container {
+    background-color: #DDD0C8;
+    border: 3px solid #323232; 
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los labels */
+.login-container label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Estilos para los inputs */
+.login-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #004080;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botón de ingresar */
+.login-container button {
+    background-color: #004080; /* Azul oscuro */
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efecto hover en el botón */
+.login-container button:hover {
+    background-color: #002855;
+    transform: scale(1.05);
+}
+
+.btn-del {
+    background-color: #cc0000; /* rojo */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-del:hover {
+    background-color: #990000; /* rojo más oscuro al pasar el cursor */
+    transform: scale(1.05);
+}
+
+header {
+    background-color: #323232;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-act{
+    background-color: #00a537; /* azul */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.btn-act:hover {
+    background-color: #01772b; /* azul más oscuro al pasar el cursor */
+    transform: scale(1.05);
+}
